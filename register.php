@@ -415,10 +415,10 @@ Sincerely, the computer security team of Dolcloud
 
 $mail->CharSet = 'UTF-8';
 $mail->isSMTP();                                 
-$mail->Host = 'smtp.gmail.com';                   
+$mail->Host = '';                   
 $mail->SMTPAuth = true;                        
-$mail->Username = 'makindosx@gmail.com';            
-$mail->Password = 'mak*.m01m';           
+$mail->Username = '';            
+$mail->Password = '';           
 $mail->SMTPSecure = 'tls';               
 $mail->Port = 25;                   
 

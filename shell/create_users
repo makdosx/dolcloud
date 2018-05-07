@@ -1,0 +1,54 @@
+ Step1:     Create bew user
+
+
+1) CREATE USER 'aa'@'localhost' IDENTIFIED BY '12345';
+
+2) GRANT USAGE ON * . * TO 'aa'@'localhost' IDENTIFIED BY '12345' WITH MAX_QUERIES_PER_HOUR 0 MAX_CONNECTIONS_PER_HOUR 0 MAX_UPDATES_PER_HOUR 0 MAX_USER_CONNECTIONS 0 ;
+
+
+
+3) create database aa;
+
+
+4) GRANT ALL PRIVILEGES ON `aa` . * TO 'aa'@'localhost' WITH GRANT OPTION ;
+
+
+
+
+ Step 2: create tables from sql file
+
+
+
+
+ Step 3: 
+
+for create user a need this 
+
+
+table
+llx_user
+
+columns
+login -> username
+pass_crypted -> password (md5)
+email -> email
+admin -> 1
+
+
+
+
+
+
+  Step delete    drop user
+
+
+1) drop database aa;
+
+
+2) DROP USER 'aa'@'localhost';
+
+
+
+
+
+
